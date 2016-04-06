@@ -36,11 +36,11 @@ public class MainActivity extends ActionBarActivity {
             if (null != data){
                 Bundle extras = data.getExtras();
 
-                int receivedNum = extras.getInt("returnedItemNum");
-                savedItemArr[receivedNum].itemname = extras.getString("returnedItemName");
-                savedItemArr[receivedNum].itemmnemo = extras.getString("returnedItemMnemo");
-                savedItemArr[receivedNum].itemdescription = extras.getString("returnedItemDescription");
-                savedItemArr[receivedNum].wasset = extras.getBoolean("returnedItemSet");
+                int receivedNum = extras.getInt("passedItemNum");
+                savedItemArr[receivedNum].itemname = extras.getString("passedItemName");
+                savedItemArr[receivedNum].itemmnemo = extras.getString("passedItemMnemo");
+                savedItemArr[receivedNum].itemdescription = extras.getString("passedItemDescription");
+                savedItemArr[receivedNum].wasset = extras.getBoolean("passedItemSet");
 
                 listsToInterface();
             }

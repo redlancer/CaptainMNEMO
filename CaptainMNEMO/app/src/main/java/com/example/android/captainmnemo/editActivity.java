@@ -1,5 +1,6 @@
 package com.example.android.captainmnemo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -52,14 +53,16 @@ public class editActivity extends AppCompatActivity {
         EditText editMnemoText = (EditText) findViewById(R.id.edit_mnemo_view);
         EditText editDescriptionText = (EditText) findViewById(R.id.edit_description_view);
 
-        Intent data = getIntent(); // new Intent();
-        data.putExtra("returnedItemNum", si.viewnum);
-        data.putExtra("returnedItemName", editNameText.getText());
-        data.putExtra("returnedItemMnemo", editMnemoText.getText());
-        data.putExtra("returnedItemDescription", editDescriptionText.getText());
-        data.putExtra("returnedItemSet", true);
+        Intent data = new Intent(); // getIntent();
+        data.putExtra("passedItemNum", si.viewnum);
+        data.putExtra("passedItemName", editNameText.getText());
+        data.putExtra("passedItemMnemo", editMnemoText.getText());
+        data.putExtra("passedItemDescription", editDescriptionText.getText());
+        data.putExtra("passedItemSet", true);
+
 
         setResult(RESULT_OK,data);
+
 
         finish();
 
