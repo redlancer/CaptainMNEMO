@@ -16,7 +16,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends ActionBarActivity {
 
-    SavedItem[] savedItemArr = new SavedItem[4];
+    SavedItem[] savedItemArr = new SavedItem[10];
     static final int EDIT_ITEM_REQUEST = 1; //the request code
 
     @Override
@@ -65,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
             Button currentButton = (Button) findViewById(resID);
             String generatedText = "Item " +(i+1) + "\n\n\n" +savedItemArr[i].itemname +"\n\n\n" +savedItemArr[i].itemmnemo;
             currentButton.setText(generatedText);
-            if(savedItemArr[i].wasset = false)
+            if(savedItemArr[i].wasset == false)
             {
                 currentButton.setBackgroundColor(Color.parseColor("#00FF00"));
             }
@@ -111,6 +111,24 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case R.id.item4:
                 arrayPos = 3;
+                break;
+            case R.id.item5:
+                arrayPos = 4;
+                break;
+            case R.id.item6:
+                arrayPos = 5;
+                break;
+            case R.id.item7:
+                arrayPos = 6;
+                break;
+            case R.id.item8:
+                arrayPos = 7;
+                break;
+            case R.id.item9:
+                arrayPos = 8;
+                break;
+            case R.id.item10:
+                arrayPos = 9;
                 break;
         }
         editActivity.putExtra("passedItemNum",(arrayPos));

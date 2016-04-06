@@ -39,42 +39,116 @@
         android:background="@android:color/darker_gray"
         android:layout_centerHorizontal="true"/>
 
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:text="Item 1"
-        android:id="@+id/item1"
-        android:onClick="startEditActivity" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:text="Item 2"
-        android:id="@+id/item2"
-        android:onClick="startEditActivity" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:text="Item 3"
-        android:id="@+id/item3"
-         android:onClick="startEditActivity" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 1"
+                android:id="@+id/item1"
+                android:onClick="startEditActivity" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:text="Item 4"
-        android:id="@+id/item4"
-        android:onClick="startEditActivity"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 3"
+                android:id="@+id/item3"
+                android:onClick="startEditActivity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 5"
+                android:id="@+id/item5"
+                android:onClick="startEditActivity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 7"
+                android:id="@+id/item7"
+                android:onClick="startEditActivity"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 9"
+                android:id="@+id/item9"
+                android:onClick="startEditActivity"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 2"
+                android:id="@+id/item2"
+                android:onClick="startEditActivity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 4"
+                android:id="@+id/item4"
+                android:onClick="startEditActivity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 6"
+                android:id="@+id/item6"
+                android:onClick="startEditActivity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 8"
+                android:id="@+id/item8"
+                android:onClick="startEditActivity"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="Item 10"
+                android:id="@+id/item10"
+                android:onClick="startEditActivity"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 
 
 </LinearLayout>

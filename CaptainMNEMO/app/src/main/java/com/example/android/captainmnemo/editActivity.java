@@ -55,9 +55,9 @@ public class editActivity extends AppCompatActivity {
 
         Intent data = new Intent(); // getIntent();
         data.putExtra("passedItemNum", si.viewnum);
-        data.putExtra("passedItemName", editNameText.getText());
-        data.putExtra("passedItemMnemo", editMnemoText.getText());
-        data.putExtra("passedItemDescription", editDescriptionText.getText());
+        data.putExtra("passedItemName", editNameText.getText().toString());
+        data.putExtra("passedItemMnemo", editMnemoText.getText().toString());
+        data.putExtra("passedItemDescription", editDescriptionText.getText().toString());
         data.putExtra("passedItemSet", true);
 
 
